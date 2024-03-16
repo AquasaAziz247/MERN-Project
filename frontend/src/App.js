@@ -1,19 +1,15 @@
-// import logo from './logo.svg';
-
-import './App.css';
 import React from 'react';
-import Header from './component/Header';
-
+import { BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter if using React Router
+import Header from './component/Header'; // Import Header component
 
 const App = () => {
   return (
-    <div className="bg-red-400">
-      ss
-      <Header />
-      
-      {/* Main content goes here */}
-      
-    </div>
+    <Router> {/* Wrap your application with BrowserRouter if using React Router */}
+      <div className="app">
+        <Header /> {/* Include the Header component */}
+        {/* Other components and routes */}
+      </div>
+    </Router>
   );
 };
 
